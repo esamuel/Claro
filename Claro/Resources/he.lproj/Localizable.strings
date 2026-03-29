@@ -1,0 +1,389 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - כללי / משותף
+// ─────────────────────────────────────────────────────────────────────────────
+"Done"                       = "סיום";
+"OK"                         = "אישור";
+"Cancel"                     = "ביטול";
+"Error"                      = "שגיאה";
+"Delete"                     = "מחק";
+"Close"                      = "סגור";
+"Save"                       = "שמור";
+"Back"                       = "חזרה";
+"Grant Access"               = "אפשר גישה";
+"Open Settings"              = "פתח הגדרות";
+"Access Required"            = "נדרשת גישה";
+"Select All"                 = "בחר הכל";
+"Deselect All"               = "בטל בחירה";
+"Rescan"                     = "סרוק שוב";
+"Scanning…"                  = "סורק…";
+"Deleting…"                  = "מוחק…";
+"Delete permanently"         = "מחק לצמיתות";
+"Coming soon"                = "בקרוב";
+"PRO"                        = "פרו";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - טאבים
+// ─────────────────────────────────────────────────────────────────────────────
+"Home"                       = "בית";
+"Photos"                     = "תמונות";
+"iCloud"                     = "iCloud";
+"Contacts"                   = "אנשי קשר";
+"More"                       = "עוד";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - מסך ראשי
+// ─────────────────────────────────────────────────────────────────────────────
+"Storage Used"               = "אחסון בשימוש";
+"Smart Clean with AI"        = "ניקוי חכם עם בינה מלאכותית";
+"Clean"                      = "ניקוי";
+"Tools"                      = "כלים";
+"Duplicates"                 = "כפילויות";
+"Reclaimable"                = "ניתן לפנות";
+"Photo Cleaner"              = "מנקה תמונות";
+"iCloud Manager"             = "מנהל iCloud";
+"Contact Cleaner"            = "מנקה אנשי קשר";
+"Private Vault"              = "כספת פרטית";
+"Email Checker"              = "בודק אימייל";
+"Encrypted local storage"    = "אחסון מוצפן במכשיר";
+"Verify if your email is leaked" = "בדוק אם האימייל שלך דלף";
+"Merge duplicate contacts"   = "מזג אנשי קשר כפולים";
+"No duplicates found"        = "לא נמצאו כפילויות";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - מנקה תמונות
+// ─────────────────────────────────────────────────────────────────────────────
+"Photo Cleaner"              = "מנקה תמונות";
+"Grant Claro access to your photo library to find and remove duplicates, freeing up valuable storage." = "אפשר ל-Claro גישה לספריית התמונות שלך כדי למצוא ולהסיר כפילויות ולפנות שטח אחסון.";
+"Photo access was denied. Please enable it in Settings to use the Photo Cleaner." = "הגישה לתמונות נדחתה. אפשר אותה בהגדרות כדי להשתמש במנקה התמונות.";
+"This may take a moment"     = "זה עשוי לקחת רגע";
+"All Clean!"                 = "הכל נקי!";
+"No duplicate photos found"  = "לא נמצאו תמונות כפולות";
+"Review & Clean"             = "סקירה וניקוי";
+"Found"                      = "נמצאו";
+"Exact Duplicates"           = "כפולות מדויקות";
+"Similar Photos"             = "תמונות דומות";
+"Duplicate Videos"           = "סרטונים כפולים";
+
+// סקירת כפילויות
+"Review Duplicates"          = "סקירת כפילויות";
+"Tap the photo you want to keep" = "הקש על התמונה שברצונך לשמור";
+"No duplicate photos found." = "לא נמצאו תמונות כפולות.";
+"copies"                     = "עותקים";
+"Save %@"                    = "חסוך %@";
+"Delete %d photos · free %@" = "מחק %d תמונות · פנה %@";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - מנהל iCloud
+// ─────────────────────────────────────────────────────────────────────────────
+"iCloud Manager"             = "מנהל iCloud";
+"Grant photo access so Claro can find large videos and photos eating your storage." = "אפשר גישה לתמונות כדי ש-Claro יוכל למצוא סרטונים ותמונות גדולות שתופסות מקום.";
+"Photo access was denied. Enable it in Settings to use iCloud Manager." = "הגישה לתמונות נדחתה. אפשר אותה בהגדרות כדי להשתמש במנהל iCloud.";
+"Scanning your media…"       = "סורק את המדיה שלך…";
+"Finding large files"        = "מאתר קבצים גדולים";
+"All Clear!"                 = "הכל תקין!";
+"No large files taking up space" = "לא נמצאו קבצים גדולים";
+"Review Files"               = "סקור קבצים";
+"Your Largest Files"         = "הקבצים הגדולים שלך";
+"Sorted by size — not duplicates. Always review before deleting." = "ממוינים לפי גודל — לא כפילויות. תמיד בדוק לפני מחיקה.";
+"Videos"                     = "סרטונים";
+"Heavy Photos"               = "תמונות כבדות";
+"No videos found"            = "לא נמצאו סרטונים";
+"No heavy photos found"      = "לא נמצאו תמונות כבדות";
+"Manage"                     = "ניהול";
+"iCloud Storage Settings"    = "הגדרות אחסון iCloud";
+"Manage backups, optimize storage" = "נהל גיבויים, ייעל אחסון";
+"iCloud"                     = "iCloud";
+"iCloud Connected"           = "iCloud מחובר";
+"iCloud Not Available"       = "iCloud אינו זמין";
+"Manage iCloud Storage"      = "נהל אחסון iCloud";
+"Opens Settings → Apple ID → iCloud" = "פותח הגדרות ← Apple ID ← iCloud";
+
+// סקירת קבצים גדולים
+"Large Files"                = "קבצים גדולים";
+"These are your biggest files by size — not duplicates or junk. Only delete what you no longer need." = "אלו הקבצים הגדולים ביותר שלך לפי גודל — לא כפילויות. מחק רק מה שאינך צריך.";
+"All"                        = "הכל";
+"No large files found."      = "לא נמצאו קבצים גדולים.";
+"Video"                      = "סרטון";
+"Large Photo"                = "תמונה גדולה";
+"Delete %d items · free %@"  = "מחק %d פריטים · פנה %@";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - מנקה אנשי קשר
+// ─────────────────────────────────────────────────────────────────────────────
+"Contact Cleaner"            = "מנקה אנשי קשר";
+"Grant Claro access to your contacts to detect duplicates and merge incomplete records." = "אפשר ל-Claro גישה לאנשי הקשר שלך כדי לאתר כפילויות ולמזג רשומות חסרות.";
+"Contact access was denied. Please enable it in Settings to use the Contact Cleaner." = "הגישה לאנשי הקשר נדחתה. אפשר אותה בהגדרות כדי להשתמש במנקה.";
+"Scanning contacts…"         = "סורק אנשי קשר…";
+"Finding duplicate entries"  = "מאתר רשומות כפולות";
+"No duplicate contacts found" = "לא נמצאו אנשי קשר כפולים";
+"Review Contacts"            = "סקור אנשי קשר";
+"By Category"                = "לפי קטגוריה";
+"Duplicate Contacts"         = "אנשי קשר כפולים";
+"Incomplete Contacts"        = "אנשי קשר חסרים";
+"No Name Contacts"           = "אנשי קשר ללא שם";
+
+// סקירת אנשי קשר
+"Tap a contact to mark it as the one to KEEP. Claro will merge unique phone numbers and emails from the others into it, then delete the duplicates." = "הקש על איש הקשר שברצונך לשמור. Claro ימזג מספרי טלפון ואימיילים ייחודיים מהאחרים לתוכו, ואז ימחק את הכפולות.";
+"Same Phone Number"          = "מספר טלפון זהה";
+"Same Name"                  = "שם זהה";
+"KEEP"                       = "שמור";
+"Merging…"                   = "ממזג…";
+"No duplicate contacts found." = "לא נמצאו אנשי קשר כפולים.";
+"Merge %d groups · remove %d duplicates" = "מזג %d קבוצות · הסר %d כפילויות";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - ניקוי חכם / תוצאות סריקה
+// ─────────────────────────────────────────────────────────────────────────────
+"All Clean! 🎉"              = "הכל נקי! 🎉";
+"Your phone is already optimized." = "הטלפון שלך כבר מיועל.";
+"Ready to be cleaned"        = "מוכן לניקוי";
+"Duplicate Photos"           = "תמונות כפולות";
+"Biggest files by size — not duplicates. Review before deleting." = "הקבצים הגדולים ביותר לפי גודל — לא כפילויות. בדוק לפני מחיקה.";
+"Unlock to Clean All"        = "פתח כדי לנקות הכל";
+"Recommendations"            = "המלצות";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - מייעל
+// ─────────────────────────────────────────────────────────────────────────────
+"Optimizer"                  = "מייעל";
+"Device Health Score"        = "ציון בריאות המכשיר";
+"Excellent"                  = "מצוין";
+"Good"                       = "טוב";
+"Fair"                       = "סביר";
+"Needs Attention"            = "דורש תשומת לב";
+"Battery"                    = "סוללה";
+"Free"                       = "פנוי";
+"Temp"                       = "טמפ׳";
+"Brightness"                 = "בהירות";
+"Normal"                     = "תקין";
+"Warm"                       = "חמים";
+"Hot"                        = "חם";
+"Critical"                   = "קריטי";
+"Tip"                        = "טיפ";
+"Warning"                    = "אזהרה";
+
+// כותרות טיפים
+"Battery critically low"     = "הסוללה ברמה קריטית";
+"Battery below 40%"          = "הסוללה מתחת ל-40%";
+"Low Power Mode is off"      = "מצב חיסכון בחשמל כבוי";
+"Low Power Mode is on"       = "מצב חיסכון בחשמל פועל";
+"Charging"                   = "טעינה";
+"Device is warm"             = "המכשיר חם";
+"Device overheating"         = "המכשיר מתחמם יתר על המידה";
+"Device slightly warm"       = "המכשיר חמים מעט";
+"Temperature normal"         = "טמפרטורה תקינה";
+"Storage almost full"        = "האחסון כמעט מלא";
+"Storage running low"        = "האחסון מתמעט";
+"Storage looks good"         = "האחסון במצב טוב";
+"Screen brightness is high"  = "בהירות המסך גבוהה";
+"Brightness is efficient"    = "הבהירות יעילה";
+"Review Background App Refresh" = "בדוק רענון אפליקציות ברקע";
+"Open Settings"              = "פתח הגדרות";
+"Clean Now"                  = "נקה עכשיו";
+
+// גוף טיפים (מחרוזות פורמט — %d = מספר שלם, %@ = טקסט, %.1f = עשרוני)
+"opt.battery.critical.body"  = "הסוללה שלך ב-%d%%. חבר לחשמל עכשיו כדי למנוע כיבוי.";
+"opt.battery.warning.body"   = "הפעל מצב חיסכון בחשמל כדי להאריך את זמן השימוש עד שתוכל לטעון.";
+"opt.battery.lowpower.off.body" = "הפעלת מצב חיסכון בחשמל יכולה להאריך שעות של חיי סוללה על ידי צמצום פעילות ברקע.";
+"opt.battery.lowpower.on.body"  = "המכשיר חוסך בסוללה. פעילות ברקע מצומצמת.";
+"opt.battery.charging.high.body" = "הסוללה ב-%d%%. תוכל לנתק — טעינות תכופות ל-100%% עלולות להפחית את קיבולת הסוללה לאורך זמן.";
+"opt.battery.charging.body"  = "הסוללה ב-%d%%. הטעינה בתהליך.";
+"opt.thermal.serious.body"   = "האייפון שלך פועל חם. סגור אפליקציות תובעניות ותן לו להתקרר.";
+"opt.thermal.critical.body"  = "iOS מגביל ביצועים כדי לקרר. הפסק טעינה, הסר את הכיסוי, ותן למכשיר לנוח.";
+"opt.thermal.fair.body"      = "הטמפרטורה מעט גבוהה. נורמלי בזמן שימוש אינטנסיבי.";
+"opt.thermal.nominal.body"   = "המכשיר פועל בטמפרטורה תקינה.";
+"opt.storage.critical.body"  = "רק %.1f GB פנוי מתוך %.0f GB. iOS זקוק לשטח כדי לתפקד — הביצועים יפגעו.";
+"opt.storage.warning.body"   = "%.1f GB פנוי מתוך %.0f GB. שקול לנקות תמונות ואפליקציות.";
+"opt.storage.good.body"      = "%.1f GB פנוי מתוך %.0f GB (%.0f%% זמין).";
+"opt.brightness.high.body"   = "המסך שלך ב-%d%% בהירות — אחד מניקוזי הסוללה הגדולים ביותר. הורדה מתחת ל-50%% תשפיע באופן ניכר.";
+"opt.brightness.good.body"   = "בהירות המסך ב-%d%% — טווח טוב לחיי סוללה.";
+"opt.background.refresh.body" = "אפליקציות שמתעדכנות ברקע מרוקנות את הסוללה בשקט. עבור להגדרות ← כללי ← רענון אפליקציות ברקע וכבה עבור אפליקציות שאינך צריך עדכונים חיים מהן.";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - דחיסה
+// ─────────────────────────────────────────────────────────────────────────────
+"Compression"                = "דחיסה";
+"Potential savings"          = "חיסכון פוטנציאלי";
+"Photo Quality"              = "איכות תמונה";
+"Video Resolution"           = "רזולוציית וידאו";
+"High"                       = "גבוהה";
+"Medium"                     = "בינונית";
+"Low"                        = "נמוכה";
+"Saves ~40% · barely visible"  = "חוסך ~40% · כמעט בלתי נראה";
+"Saves ~60% · slight reduction" = "חוסך ~60% · הפחתה קלה";
+"Saves ~75% · noticeable"   = "חוסך ~75% · מורגש";
+"Saves ~50% · full HD"       = "חוסך ~50% · HD מלא";
+"Saves ~70% · HD quality"    = "חוסך ~70% · איכות HD";
+"Saves ~85% · smaller screens" = "חוסך ~85% · למסכים קטנים";
+"All %@ are optimized"       = "כל %@ מיועלים";
+"No %@ above the size threshold were found." = "לא נמצאו %@ מעל סף הגודל.";
+"No Photo Access"            = "אין גישה לתמונות";
+"To compress photos and videos, allow access to your library." = "כדי לדחוס תמונות וסרטונים, אפשר גישה לספריה שלך.";
+"Allow Access"               = "אפשר גישה";
+"To compress photos and videos, go to Settings and allow access." = "כדי לדחוס תמונות וסרטונים, עבור להגדרות ואפשר גישה.";
+"Originals will be deleted · One system confirmation will appear" = "הקבצים המקוריים יימחקו · אישור מערכת אחד יופיע";
+"Originals will be deleted · A system confirmation will appear" = "הקבצים המקוריים יימחקו · אישור מערכת יופיע";
+"Compression Failed"         = "הדחיסה נכשלה";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - בודק אימייל
+// ─────────────────────────────────────────────────────────────────────────────
+"Email Checker"              = "בודק אימייל";
+"Data Breach Scanner"        = "סורק פרצות מידע";
+"Check if your email appeared in a known data leak" = "בדוק אם כתובת האימייל שלך הופיעה בדליפת מידע ידועה";
+"Enter your email address"   = "הזן כתובת אימייל";
+"Check for Breaches"         = "בדוק פרצות";
+"Checking…"                  = "בודק…";
+"High Risk — Action Needed"  = "סיכון גבוה — נדרשת פעולה";
+"Credentials from this email were leaked. Change your passwords now." = "פרטי הגישה של אימייל זה דלפו. שנה את הסיסמאות שלך עכשיו.";
+"Moderate Risk"              = "סיכון בינוני";
+"This email has appeared in data breaches. Review your passwords." = "אימייל זה הופיע בפרצות מידע. בדוק את הסיסמאות שלך.";
+"No Breaches Found"          = "לא נמצאו פרצות";
+"This email didn't appear in any known data leak." = "אימייל זה לא הופיע בשום דליפת מידע ידועה.";
+"Credentials leaked"         = "פרטי גישה דלפו";
+"Recent leak"                = "דליפה אחרונה";
+"Data breach"                = "פרצת מידע";
+"Blacklisted"                = "ברשימה שחורה";
+"Reputation"                 = "מוניטין";
+"View Full Report on HaveIBeenPwned" = "צפה בדוח המלא ב-HaveIBeenPwned";
+"Yes"                        = "כן";
+"No"                         = "לא";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - מנקה אימייל
+// ─────────────────────────────────────────────────────────────────────────────
+"Email Cleaner"              = "מנקה אימייל";
+"Clean your inbox"           = "נקה את תיבת הדואר שלך";
+"Connect Gmail to find newsletters, promotions, and social clutter — then delete them all at once." = "חבר את Gmail כדי למצוא ניוזלטרים, מבצעים ורעש חברתי — ואז למחוק את כולם בבת אחת.";
+"Claro only reads message IDs and labels to count and delete emails. It never reads your email content or stores your credentials." = "Claro קורא רק מזהי הודעות ותוויות כדי לספור ולמחוק אימיילים. הוא לעולם לא קורא את תוכן האימיילים שלך ולא שומר את פרטי הגישה שלך.";
+"Sign in with Google"        = "היכנס עם Google";
+"Connecting…"                = "מתחבר…";
+"Sign-In Failed"             = "הכניסה נכשלה";
+"Gmail Connected"            = "Gmail מחובר";
+"emails found to clean"      = "אימיילים נמצאו לניקוי";
+"What we found"              = "מה שמצאנו";
+"Newsletters"                = "ניוזלטרים";
+"Promotions"                 = "מבצעים";
+"Social"                     = "רשתות חברתיות";
+"Delete all"                 = "מחק הכל";
+"None found · inbox is clean" = "לא נמצא · תיבת הדואר נקייה";
+"Sign Out"                   = "התנתק";
+"Delete %d %@?"              = "למחוק %d %@?";
+"These emails will be permanently deleted from your Gmail. This cannot be undone." = "אימיילים אלו יימחקו לצמיתות מ-Gmail שלך. לא ניתן לבטל פעולה זו.";
+"Delete Failed"              = "המחיקה נכשלה";
+"Emails from the last 90 days · Scoped to Inbox" = "אימיילים מ-90 הימים האחרונים · תיבת הדואר הנכנס בלבד";
+"Scanning your inbox…"       = "סורק את תיבת הדואר שלך…";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - כספת פרטית
+// ─────────────────────────────────────────────────────────────────────────────
+"Private Vault"              = "כספת פרטית";
+"Your photos are encrypted with AES-256\nand stored only on this device." = "התמונות שלך מוצפנות עם AES-256\nומאוחסנות רק במכשיר זה.";
+"Unlock Vault"               = "פתח כספת";
+"Authenticating…"            = "מאמת…";
+"How Private Vault works"    = "כיצד הכספת הפרטית עובדת";
+"Photos you import are encrypted with a unique AES-256 key stored in your iOS Keychain — not in iCloud, not on any server. The key never leaves your device. Even Claro can't read your vault." = "התמונות שתייבא מוצפנות עם מפתח AES-256 ייחודי המאוחסן ב-iOS Keychain — לא ב-iCloud ולא בשום שרת. המפתח לעולם לא עוזב את המכשיר שלך. גם Claro לא יכול לקרוא את הכספת שלך.";
+"Vault is empty"             = "הכספת ריקה";
+"Import photos to store them\nencrypted on this device." = "ייבא תמונות לאחסון\nמוצפן במכשיר זה.";
+"Import Photos"              = "ייבא תמונות";
+"Importing…"                 = "מייבא…";
+"items"                      = "פריטים";
+"Delete from Vault"          = "מחק מהכספת";
+"Remove from Photo Library?" = "הסר מספריית התמונות?";
+"The encrypted copy is safe in your Vault. Remove the original from your Photo Library?" = "העותק המוצפן שמור בכספת שלך. להסיר את המקור מספריית התמונות?";
+"The encrypted copy is safe in your Vault. To remove the original, delete it manually from the Photos app." = "העותק המוצפן שמור בכספת שלך. כדי להסיר את המקור, מחק אותו ידנית מאפליקציית התמונות.";
+"Remove original from Photos" = "הסר מקור מהתמונות";
+"Remove originals from Photos" = "הסר מקורות מהתמונות";
+"Keep in Photos"             = "השאר בתמונות";
+"Delete from Vault?"         = "למחוק מהכספת?";
+"This permanently deletes the encrypted copy. The photo will NOT be restored to your Photo Library." = "פעולה זו מוחקת לצמיתות את העותק המוצפן. התמונה לא תוחזר לספריית התמונות שלך.";
+"Import Error"               = "שגיאת ייבוא";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - עוד / כלים מתקדמים
+// ─────────────────────────────────────────────────────────────────────────────
+"Pro Tools"                  = "כלים מתקדמים";
+"Boost battery & performance" = "שפר סוללה וביצועים";
+"Shrink photos & videos"     = "כווץ תמונות וסרטונים";
+"Coming Soon"                = "בקרוב";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - הגדרות
+// ─────────────────────────────────────────────────────────────────────────────
+"Settings"                   = "הגדרות";
+"Account"                    = "חשבון";
+"Restore Purchase"           = "שחזור רכישה";
+"App Settings"               = "הגדרות אפליקציה";
+"Appearance"                 = "מראה";
+"Language"                   = "שפה";
+"Notifications"              = "התראות";
+"Weekly scan reminder · Storage full alert" = "תזכורת סריקה שבועית · התראת אחסון מלא";
+"Help & Feedback"            = "עזרה ומשוב";
+"Contact Us"                 = "צרו קשר";
+"Rate Claro"                 = "דרגו את Claro";
+"Share Claro"                = "שתפו את Claro";
+"Check out Claro — AI Storage Cleaner!" = "בדקו את Claro — מנקה אחסון חכם!";
+"Legal"                      = "משפטי";
+"Terms of Service"           = "תנאי שימוש";
+"Privacy Policy"             = "מדיניות פרטיות";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - מראה
+// ─────────────────────────────────────────────────────────────────────────────
+"System"                     = "ברירת מחדל";
+"Light"                      = "בהיר";
+"Dark"                       = "כהה";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - בורר שפה
+// ─────────────────────────────────────────────────────────────────────────────
+"The app will use your selected language. You can always change it here." = "האפליקציה תשתמש בשפה שבחרת. תוכל תמיד לשנות זאת כאן.";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - סטטוס התראות
+// ─────────────────────────────────────────────────────────────────────────────
+"Enabled"                    = "מופעל";
+"Disabled"                   = "מושבת";
+"Not Set"                    = "לא הוגדר";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - מסך תשלום
+// ─────────────────────────────────────────────────────────────────────────────
+"Claro Pro"                  = "Claro Pro";
+"Clean everything. Keep what matters." = "נקה הכל. שמור את מה שחשוב.";
+"Annual"                     = "שנתי";
+"Lifetime"                   = "לכל החיים";
+"Monthly"                    = "חודשי";
+"3-day free trial"           = "ניסיון חינם 3 ימים";
+"Best Value"                 = "הכי משתלם";
+"/ year"                     = "/ שנה";
+"one-time"                   = "חד פעמי";
+"/ month"                    = "/ חודש";
+"Unlimited duplicate photo cleanup" = "ניקוי תמונות כפולות ללא הגבלה";
+"Smart contact deduplication"       = "מיזוג אנשי קשר כפולים חכם";
+"iCloud storage analysis"           = "ניתוח אחסון iCloud";
+"Private encrypted vault"           = "כספת מוצפנת פרטית";
+"Email breach checker"              = "בדיקת דליפת אימייל";
+"Weekly smart scan alerts"          = "התראות סריקה חכמה שבועיות";
+"No ads, ever"                      = "ללא פרסומות, לעולם";
+"Start 3-Day Free Trial"     = "התחל ניסיון חינם 3 ימים";
+"Get Pro Monthly"            = "קבל Pro חודשי";
+"Get Lifetime Access"        = "קבל גישה לכל החיים";
+"Maybe Later"                = "אולי מאוחר יותר";
+"Upgrade to Pro"             = "שדרג ל-Pro";
+"Unlock all premium features" = "פתח את כל התכונות הפרימיום";
+"Get Pro"                    = "קבל Pro";
+"Not Available"              = "לא זמין";
+"This product isn't available right now. Please try again later." = "מוצר זה אינו זמין כרגע. נסה שוב מאוחר יותר.";
+"Purchase Failed"            = "הרכישה נכשלה";
+"Something went wrong. Please try again." = "משהו השתבש. נסה שוב.";
+"No Purchases Found"         = "לא נמצאו רכישות";
+"No previous purchases were found for your Apple ID." = "לא נמצאו רכישות קודמות עבור Apple ID שלך.";
+"Restore Failed"             = "השחזור נכשל";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - התראות שחזור
+// ─────────────────────────────────────────────────────────────────────────────
+"Your purchases have been successfully restored." = "הרכישות שוחזרו בהצלחה.";
+"No purchases were found for your Apple ID."     = "לא נמצאו רכישות עבור Apple ID שלך.";
+"Restore failed. Please try again."              = "השחזור נכשל. נסה שוב.";

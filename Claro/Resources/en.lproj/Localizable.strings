@@ -1,0 +1,391 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - Global / Shared
+// ─────────────────────────────────────────────────────────────────────────────
+"Done"                       = "Done";
+"OK"                         = "OK";
+"Cancel"                     = "Cancel";
+"Error"                      = "Error";
+"Delete"                     = "Delete";
+"Close"                      = "Close";
+"Save"                       = "Save";
+"Back"                       = "Back";
+"Grant Access"               = "Grant Access";
+"Open Settings"              = "Open Settings";
+"Access Required"            = "Access Required";
+"Select All"                 = "Select All";
+"Deselect All"               = "Deselect All";
+"Rescan"                     = "Rescan";
+"Scanning…"                  = "Scanning…";
+"Deleting…"                  = "Deleting…";
+"Delete permanently"         = "Delete permanently";
+"Coming soon"                = "Coming soon";
+"PRO"                        = "PRO";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - Tabs
+// ─────────────────────────────────────────────────────────────────────────────
+"Home"                       = "Home";
+"Photos"                     = "Photos";
+"iCloud"                     = "iCloud";
+"Contacts"                   = "Contacts";
+"More"                       = "More";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - Home
+// ─────────────────────────────────────────────────────────────────────────────
+"Storage Used"               = "Storage Used";
+"Smart Clean with AI"        = "Smart Clean with AI";
+"Clean"                      = "Clean";
+"Tools"                      = "Tools";
+"Duplicates"                 = "Duplicates";
+"Reclaimable"                = "Reclaimable";
+"Photo Cleaner"              = "Photo Cleaner";
+"iCloud Manager"             = "iCloud Manager";
+"Contact Cleaner"            = "Contact Cleaner";
+"Private Vault"              = "Private Vault";
+"Email Checker"              = "Email Checker";
+"Encrypted local storage"    = "Encrypted local storage";
+"Verify if your email is leaked" = "Verify if your email is leaked";
+"Merge duplicate contacts"   = "Merge duplicate contacts";
+"No duplicates found"        = "No duplicates found";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - Photo Cleaner
+// ─────────────────────────────────────────────────────────────────────────────
+"Photo Cleaner"              = "Photo Cleaner";
+"Grant Claro access to your photo library to find and remove duplicates, freeing up valuable storage." = "Grant Claro access to your photo library to find and remove duplicates, freeing up valuable storage.";
+"Photo access was denied. Please enable it in Settings to use the Photo Cleaner." = "Photo access was denied. Please enable it in Settings to use the Photo Cleaner.";
+"This may take a moment"     = "This may take a moment";
+"All Clean!"                 = "All Clean!";
+"No duplicate photos found"  = "No duplicate photos found";
+"Review & Clean"             = "Review & Clean";
+"Found"                      = "Found";
+"Exact Duplicates"           = "Exact Duplicates";
+"Similar Photos"             = "Similar Photos";
+"Duplicate Videos"           = "Duplicate Videos";
+
+// Duplicate Review
+"Review Duplicates"          = "Review Duplicates";
+"Tap the photo you want to keep" = "Tap the photo you want to keep";
+"No duplicate photos found." = "No duplicate photos found.";
+"copies"                     = "copies";
+"Save %@"                    = "Save %@";
+"Delete %d photos · free %@" = "Delete %d photos · free %@";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - iCloud Manager
+// ─────────────────────────────────────────────────────────────────────────────
+"iCloud Manager"             = "iCloud Manager";
+"Grant photo access so Claro can find large videos and photos eating your storage." = "Grant photo access so Claro can find large videos and photos eating your storage.";
+"Photo access was denied. Enable it in Settings to use iCloud Manager." = "Photo access was denied. Enable it in Settings to use iCloud Manager.";
+"Scanning your media…"       = "Scanning your media…";
+"Finding large files"        = "Finding large files";
+"All Clear!"                 = "All Clear!";
+"No large files taking up space" = "No large files taking up space";
+"Review Files"               = "Review Files";
+"Your Largest Files"         = "Your Largest Files";
+"Sorted by size — not duplicates. Always review before deleting." = "Sorted by size — not duplicates. Always review before deleting.";
+"Videos"                     = "Videos";
+"Heavy Photos"               = "Heavy Photos";
+"No videos found"            = "No videos found";
+"No heavy photos found"      = "No heavy photos found";
+"Manage"                     = "Manage";
+"iCloud Storage Settings"    = "iCloud Storage Settings";
+"Manage backups, optimize storage" = "Manage backups, optimize storage";
+"iCloud"                     = "iCloud";
+"iCloud Connected"           = "iCloud Connected";
+"iCloud Not Available"       = "iCloud Not Available";
+"Manage iCloud Storage"      = "Manage iCloud Storage";
+"Opens Settings → Apple ID → iCloud" = "Opens Settings → Apple ID → iCloud";
+
+// Large Media Review
+"Large Files"                = "Large Files";
+"These are your biggest files by size — not duplicates or junk. Only delete what you no longer need." = "These are your biggest files by size — not duplicates or junk. Only delete what you no longer need.";
+"All"                        = "All";
+"No large files found."      = "No large files found.";
+"Video"                      = "Video";
+"Large Photo"                = "Large Photo";
+"Delete %d items · free %@"  = "Delete %d items · free %@";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - Contact Cleaner
+// ─────────────────────────────────────────────────────────────────────────────
+"Contact Cleaner"            = "Contact Cleaner";
+"Grant Claro access to your contacts to detect duplicates and merge incomplete records." = "Grant Claro access to your contacts to detect duplicates and merge incomplete records.";
+"Contact access was denied. Please enable it in Settings to use the Contact Cleaner." = "Contact access was denied. Please enable it in Settings to use the Contact Cleaner.";
+"Scanning contacts…"         = "Scanning contacts…";
+"Finding duplicate entries"  = "Finding duplicate entries";
+"No duplicate contacts found" = "No duplicate contacts found";
+"Review Contacts"            = "Review Contacts";
+"By Category"                = "By Category";
+"Duplicate Contacts"         = "Duplicate Contacts";
+"Incomplete Contacts"        = "Incomplete Contacts";
+"No Name Contacts"           = "No Name Contacts";
+
+// Contact Review
+"Duplicate Contacts"         = "Duplicate Contacts";
+"Tap a contact to mark it as the one to KEEP. Claro will merge unique phone numbers and emails from the others into it, then delete the duplicates." = "Tap a contact to mark it as the one to KEEP. Claro will merge unique phone numbers and emails from the others into it, then delete the duplicates.";
+"Same Phone Number"          = "Same Phone Number";
+"Same Name"                  = "Same Name";
+"KEEP"                       = "KEEP";
+"Merging…"                   = "Merging…";
+"No duplicate contacts found." = "No duplicate contacts found.";
+"Merge %d groups · remove %d duplicates" = "Merge %d groups · remove %d duplicates";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - Smart Clean / Scan Results
+// ─────────────────────────────────────────────────────────────────────────────
+"All Clean! 🎉"              = "All Clean! 🎉";
+"Your phone is already optimized." = "Your phone is already optimized.";
+"Ready to be cleaned"        = "Ready to be cleaned";
+"Duplicate Photos"           = "Duplicate Photos";
+"Biggest files by size — not duplicates. Review before deleting." = "Biggest files by size — not duplicates. Review before deleting.";
+"Unlock to Clean All"        = "Unlock to Clean All";
+"Recommendations"            = "Recommendations";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - Optimizer
+// ─────────────────────────────────────────────────────────────────────────────
+"Optimizer"                  = "Optimizer";
+"Device Health Score"        = "Device Health Score";
+"Excellent"                  = "Excellent";
+"Good"                       = "Good";
+"Fair"                       = "Fair";
+"Needs Attention"            = "Needs Attention";
+"Battery"                    = "Battery";
+"Free"                       = "Free";
+"Temp"                       = "Temp";
+"Brightness"                 = "Brightness";
+"Normal"                     = "Normal";
+"Warm"                       = "Warm";
+"Hot"                        = "Hot";
+"Critical"                   = "Critical";
+"Tip"                        = "Tip";
+"Warning"                    = "Warning";
+
+// Optimizer tip titles
+"Battery critically low"     = "Battery critically low";
+"Battery below 40%"          = "Battery below 40%";
+"Low Power Mode is off"      = "Low Power Mode is off";
+"Low Power Mode is on"       = "Low Power Mode is on";
+"Charging"                   = "Charging";
+"Device is warm"             = "Device is warm";
+"Device overheating"         = "Device overheating";
+"Device slightly warm"       = "Device slightly warm";
+"Temperature normal"         = "Temperature normal";
+"Storage almost full"        = "Storage almost full";
+"Storage running low"        = "Storage running low";
+"Storage looks good"         = "Storage looks good";
+"Screen brightness is high"  = "Screen brightness is high";
+"Brightness is efficient"    = "Brightness is efficient";
+"Review Background App Refresh" = "Review Background App Refresh";
+"Open Settings"              = "Open Settings";
+"Clean Now"                  = "Clean Now";
+
+// Optimizer tip body texts (format strings — %d = integer, %@ = string, %.1f = decimal)
+"opt.battery.critical.body"  = "Your battery is at %d%%. Plug in now to avoid shutdown.";
+"opt.battery.warning.body"   = "Enable Low Power Mode to extend usage time until you can charge.";
+"opt.battery.lowpower.off.body" = "Enabling Low Power Mode can add hours of battery life by reducing background activity.";
+"opt.battery.lowpower.on.body"  = "Your device is conserving battery. Background activity is reduced.";
+"opt.battery.charging.high.body" = "Battery at %d%%. You can unplug — frequent 100%% charges can reduce long-term capacity.";
+"opt.battery.charging.body"  = "Battery at %d%%. Charging in progress.";
+"opt.thermal.serious.body"   = "Your iPhone is running hot. Close demanding apps or games and let it cool down.";
+"opt.thermal.critical.body"  = "iOS is throttling performance to cool down. Stop charging, remove the case, and let it rest.";
+"opt.thermal.fair.body"      = "Temperature is slightly elevated. Normal during heavy use.";
+"opt.thermal.nominal.body"   = "Your device is running at a healthy temperature.";
+"opt.storage.critical.body"  = "Only %.1f GB free of %.0f GB. iOS needs space to function — performance will suffer.";
+"opt.storage.warning.body"   = "%.1f GB free of %.0f GB. Consider cleaning up photos and apps.";
+"opt.storage.good.body"      = "%.1f GB free of %.0f GB (%.0f%% available).";
+"opt.brightness.high.body"   = "Your screen is at %d%% brightness — one of the biggest battery drains. Reducing it below 50%% makes a noticeable difference.";
+"opt.brightness.good.body"   = "Screen brightness is at %d%% — a good range for battery life.";
+"opt.background.refresh.body" = "Apps updating in the background drain battery silently. Go to Settings → General → Background App Refresh and disable it for apps you don't need live updates from.";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - Compression
+// ─────────────────────────────────────────────────────────────────────────────
+"Compression"                = "Compression";
+"Potential savings"          = "Potential savings";
+"Photo Quality"              = "Photo Quality";
+"Video Resolution"           = "Video Resolution";
+"High"                       = "High";
+"Medium"                     = "Medium";
+"Low"                        = "Low";
+"Saves ~40% · barely visible"  = "Saves ~40% · barely visible";
+"Saves ~60% · slight reduction" = "Saves ~60% · slight reduction";
+"Saves ~75% · noticeable"   = "Saves ~75% · noticeable";
+"Saves ~50% · full HD"       = "Saves ~50% · full HD";
+"Saves ~70% · HD quality"    = "Saves ~70% · HD quality";
+"Saves ~85% · smaller screens" = "Saves ~85% · smaller screens";
+"All %@ are optimized"       = "All %@ are optimized";
+"No %@ above the size threshold were found." = "No %@ above the size threshold were found.";
+"No Photo Access"            = "No Photo Access";
+"To compress photos and videos, allow access to your library." = "To compress photos and videos, allow access to your library.";
+"Allow Access"               = "Allow Access";
+"To compress photos and videos, go to Settings and allow access." = "To compress photos and videos, go to Settings and allow access.";
+"Originals will be deleted · One system confirmation will appear" = "Originals will be deleted · One system confirmation will appear";
+"Originals will be deleted · A system confirmation will appear" = "Originals will be deleted · A system confirmation will appear";
+"Compression Failed"         = "Compression Failed";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - Email Checker
+// ─────────────────────────────────────────────────────────────────────────────
+"Email Checker"              = "Email Checker";
+"Data Breach Scanner"        = "Data Breach Scanner";
+"Check if your email appeared in a known data leak" = "Check if your email appeared in a known data leak";
+"Enter your email address"   = "Enter your email address";
+"Check for Breaches"         = "Check for Breaches";
+"Checking…"                  = "Checking…";
+"High Risk — Action Needed"  = "High Risk — Action Needed";
+"Credentials from this email were leaked. Change your passwords now." = "Credentials from this email were leaked. Change your passwords now.";
+"Moderate Risk"              = "Moderate Risk";
+"This email has appeared in data breaches. Review your passwords." = "This email has appeared in data breaches. Review your passwords.";
+"No Breaches Found"          = "No Breaches Found";
+"This email didn't appear in any known data leak." = "This email didn't appear in any known data leak.";
+"Credentials leaked"         = "Credentials leaked";
+"Recent leak"                = "Recent leak";
+"Data breach"                = "Data breach";
+"Blacklisted"                = "Blacklisted";
+"Reputation"                 = "Reputation";
+"View Full Report on HaveIBeenPwned" = "View Full Report on HaveIBeenPwned";
+"Yes"                        = "Yes";
+"No"                         = "No";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - Email Cleaner
+// ─────────────────────────────────────────────────────────────────────────────
+"Email Cleaner"              = "Email Cleaner";
+"Clean your inbox"           = "Clean your inbox";
+"Connect Gmail to find newsletters, promotions, and social clutter — then delete them all at once." = "Connect Gmail to find newsletters, promotions, and social clutter — then delete them all at once.";
+"Claro only reads message IDs and labels to count and delete emails. It never reads your email content or stores your credentials." = "Claro only reads message IDs and labels to count and delete emails. It never reads your email content or stores your credentials.";
+"Sign in with Google"        = "Sign in with Google";
+"Connecting…"                = "Connecting…";
+"Sign-In Failed"             = "Sign-In Failed";
+"Gmail Connected"            = "Gmail Connected";
+"emails found to clean"      = "emails found to clean";
+"What we found"              = "What we found";
+"Newsletters"                = "Newsletters";
+"Promotions"                 = "Promotions";
+"Social"                     = "Social";
+"Delete all"                 = "Delete all";
+"None found · inbox is clean" = "None found · inbox is clean";
+"Deleting…"                  = "Deleting…";
+"Sign Out"                   = "Sign Out";
+"Delete %d %@?"              = "Delete %d %@?";
+"These emails will be permanently deleted from your Gmail. This cannot be undone." = "These emails will be permanently deleted from your Gmail. This cannot be undone.";
+"Delete Failed"              = "Delete Failed";
+"Emails from the last 90 days · Scoped to Inbox" = "Emails from the last 90 days · Scoped to Inbox";
+"Scanning your inbox…"       = "Scanning your inbox…";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - Private Vault
+// ─────────────────────────────────────────────────────────────────────────────
+"Private Vault"              = "Private Vault";
+"Your photos are encrypted with AES-256\nand stored only on this device." = "Your photos are encrypted with AES-256\nand stored only on this device.";
+"Unlock Vault"               = "Unlock Vault";
+"Authenticating…"            = "Authenticating…";
+"How Private Vault works"    = "How Private Vault works";
+"Photos you import are encrypted with a unique AES-256 key stored in your iOS Keychain — not in iCloud, not on any server. The key never leaves your device. Even Claro can't read your vault." = "Photos you import are encrypted with a unique AES-256 key stored in your iOS Keychain — not in iCloud, not on any server. The key never leaves your device. Even Claro can't read your vault.";
+"Vault is empty"             = "Vault is empty";
+"Import photos to store them\nencrypted on this device." = "Import photos to store them\nencrypted on this device.";
+"Import Photos"              = "Import Photos";
+"Importing…"                 = "Importing…";
+"items"                      = "items";
+"Delete from Vault"          = "Delete from Vault";
+"Remove from Photo Library?" = "Remove from Photo Library?";
+"The encrypted copy is safe in your Vault. Remove the original from your Photo Library?" = "The encrypted copy is safe in your Vault. Remove the original from your Photo Library?";
+"The encrypted copy is safe in your Vault. To remove the original, delete it manually from the Photos app." = "The encrypted copy is safe in your Vault. To remove the original, delete it manually from the Photos app.";
+"Remove original from Photos" = "Remove original from Photos";
+"Remove originals from Photos" = "Remove originals from Photos";
+"Keep in Photos"             = "Keep in Photos";
+"Delete from Vault?"         = "Delete from Vault?";
+"This permanently deletes the encrypted copy. The photo will NOT be restored to your Photo Library." = "This permanently deletes the encrypted copy. The photo will NOT be restored to your Photo Library.";
+"Import Error"               = "Import Error";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - More / Pro Tools
+// ─────────────────────────────────────────────────────────────────────────────
+"Pro Tools"                  = "Pro Tools";
+"Boost battery & performance" = "Boost battery & performance";
+"Shrink photos & videos"     = "Shrink photos & videos";
+"Coming Soon"                = "Coming Soon";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - Settings
+// ─────────────────────────────────────────────────────────────────────────────
+"Settings"                   = "Settings";
+"Account"                    = "Account";
+"Restore Purchase"           = "Restore Purchase";
+"App Settings"               = "App Settings";
+"Appearance"                 = "Appearance";
+"Language"                   = "Language";
+"Notifications"              = "Notifications";
+"Weekly scan reminder · Storage full alert" = "Weekly scan reminder · Storage full alert";
+"Help & Feedback"            = "Help & Feedback";
+"Contact Us"                 = "Contact Us";
+"Rate Claro"                 = "Rate Claro";
+"Share Claro"                = "Share Claro";
+"Check out Claro — AI Storage Cleaner!" = "Check out Claro — AI Storage Cleaner!";
+"Legal"                      = "Legal";
+"Terms of Service"           = "Terms of Service";
+"Privacy Policy"             = "Privacy Policy";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - Appearance
+// ─────────────────────────────────────────────────────────────────────────────
+"System"                     = "System";
+"Light"                      = "Light";
+"Dark"                       = "Dark";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - Language Picker
+// ─────────────────────────────────────────────────────────────────────────────
+"The app will use your selected language. You can always change it here." = "The app will use your selected language. You can always change it here.";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - Notifications status
+// ─────────────────────────────────────────────────────────────────────────────
+"Enabled"                    = "Enabled";
+"Disabled"                   = "Disabled";
+"Not Set"                    = "Not Set";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - Paywall
+// ─────────────────────────────────────────────────────────────────────────────
+"Claro Pro"                  = "Claro Pro";
+"Clean everything. Keep what matters." = "Clean everything. Keep what matters.";
+"Annual"                     = "Annual";
+"Lifetime"                   = "Lifetime";
+"Monthly"                    = "Monthly";
+"3-day free trial"           = "3-day free trial";
+"Best Value"                 = "Best Value";
+"/ year"                     = "/ year";
+"one-time"                   = "one-time";
+"/ month"                    = "/ month";
+"Unlimited duplicate photo cleanup" = "Unlimited duplicate photo cleanup";
+"Smart contact deduplication"       = "Smart contact deduplication";
+"iCloud storage analysis"           = "iCloud storage analysis";
+"Private encrypted vault"           = "Private encrypted vault";
+"Email breach checker"              = "Email breach checker";
+"Weekly smart scan alerts"          = "Weekly smart scan alerts";
+"No ads, ever"                      = "No ads, ever";
+"Start 3-Day Free Trial"     = "Start 3-Day Free Trial";
+"Get Pro Monthly"            = "Get Pro Monthly";
+"Get Lifetime Access"        = "Get Lifetime Access";
+"Maybe Later"                = "Maybe Later";
+"Upgrade to Pro"             = "Upgrade to Pro";
+"Unlock all premium features" = "Unlock all premium features";
+"Get Pro"                    = "Get Pro";
+"Not Available"              = "Not Available";
+"This product isn't available right now. Please try again later." = "This product isn't available right now. Please try again later.";
+"Purchase Failed"            = "Purchase Failed";
+"Something went wrong. Please try again." = "Something went wrong. Please try again.";
+"No Purchases Found"         = "No Purchases Found";
+"No previous purchases were found for your Apple ID." = "No previous purchases were found for your Apple ID.";
+"Restore Failed"             = "Restore Failed";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MARK: - Restore Alerts
+// ─────────────────────────────────────────────────────────────────────────────
+"Your purchases have been successfully restored." = "Your purchases have been successfully restored.";
+"No purchases were found for your Apple ID."     = "No purchases were found for your Apple ID.";
+"Restore failed. Please try again."              = "Restore failed. Please try again.";

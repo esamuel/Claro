@@ -1,0 +1,679 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0405BBFE4193FA8257BC180C /* ContactService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7507187F71B03A502D6F698A /* ContactService.swift */; };
+		1068239CBF0A377A82C97C87 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C784F9807F75D400C709BE4D /* SettingsView.swift */; };
+		1BC5697CD97F4FD7EC1CAB40 /* OptimizerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7E4A04DEEBCF8A6FAE563D /* OptimizerService.swift */; };
+		289FB45A0C70119F40704DAB /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806F52FC4789C7EC8E5B6CB1 /* PaywallView.swift */; };
+		31CEF1C5047C6D75BDB846D0 /* ClaroTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C851D4B615EB9E008EF631 /* ClaroTheme.swift */; };
+		367205D55117CC734B246FEB /* EmailCheckerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7ACA71337656784080F43D3 /* EmailCheckerView.swift */; };
+		3A9AE0CC62B76B6A60B5BEE5 /* PermissionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0E7E01A976DFDC5934D555 /* PermissionsService.swift */; };
+		3B62B3B9DA4AE2BDA3DF478E /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5420F2E166C357056F72A43F /* ContactsView.swift */; };
+		4785C00DEF718CBBFB681B62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B22C28A4E0A97E51DA52584 /* Assets.xcassets */; };
+		48C30D873A2CC5BD505E7DD3 /* AppearancePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3A79E0F0F976CC360217DF /* AppearancePickerView.swift */; };
+		4A30B711FC9B42C29337D419 /* StorageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FE466CC02EB6AC73FE654C /* StorageModel.swift */; };
+		4DCFD0714458E3611275E4FB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB047BBAB380A27C0941D84 /* HomeView.swift */; };
+		4FC592BE989F96F2DB7DFDAA /* ClaroCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7853AF75504F678D7F7BD384 /* ClaroCard.swift */; };
+		52E538B29ED43BBC973BBA5B /* CompressionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5687B0F116D2C79F9C7F682D /* CompressionView.swift */; };
+		55EB15F73AE1ACF9E5AFDE96 /* DuplicateReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E492EAAE7A63985C0A417EE3 /* DuplicateReviewView.swift */; };
+		578E1B86C4EAA3A5995C65AD /* ProBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B1DEFB99CCE3FF1F359163 /* ProBadge.swift */; };
+		5A09E9FC73A9D939E86E8E90 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC2FC1126A86B723A00B5B0 /* NotificationService.swift */; };
+		5CE4A7860E841F92E34FF2B3 /* LegalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262A93944079ACD0517EA1F8 /* LegalView.swift */; };
+		5F289B35CC0BC0F695C8064E /* ICloudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12830749B841F59176DD890 /* ICloudView.swift */; };
+		683CFE1F2F5B1C4A5BA581DE /* CompressionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2C9BE8F0840FED0DCFDDF6 /* CompressionService.swift */; };
+		6BA829AC5C670BB9C75156E0 /* StoreKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8796B8C72F320F67DE6A2DDE /* StoreKitService.swift */; };
+		6E1C3372CFD607DEBD81D818 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D9052988088E4EE75A2FC5 /* SafariView.swift */; };
+		713466BCA5168ABF483ADA83 /* ScanService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7387178B491E2B2FE1637CBD /* ScanService.swift */; };
+		7174A950240DB36D0C8FA953 /* ContactReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F9E6FEA2AFCABC5EA7D3A2 /* ContactReviewView.swift */; };
+		7830F1CE80EB30142D2B0568 /* ClaroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235E650869E8E371BC270097 /* ClaroApp.swift */; };
+		78AC1BD08B65BB12212DB650 /* VaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AAF333B089E68820CBFCA6 /* VaultView.swift */; };
+		79EB1C07C8DA37399699B63F /* LanguagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7806CE157B92DB246196BE0D /* LanguagePickerView.swift */; };
+		81F0BD5C75B84E9BB36417C6 /* LargeMediaReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0201C816B2AE0B17B50C40D /* LargeMediaReviewView.swift */; };
+		8599A351DED346DFDAE5B8EA /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60037E8A769EBF72C92C045 /* MoreView.swift */; };
+		8C23AF6AC15B292EFB8C0EA2 /* DuplicatePhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090CE3719F90379EA3233AA9 /* DuplicatePhotoService.swift */; };
+		95369A52E8203E0690620A96 /* EmailCleanerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4817044B2CAD480F4FEF44 /* EmailCleanerService.swift */; };
+		9AA0C7B113AC681A9E0C2EBA /* PermissionViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15069557394CEC5D4C59D2B6 /* PermissionViews.swift */; };
+		9D6A772D5EEEAC65D0892F0A /* EmailCleanerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57D43D22AE02D68F633BE95 /* EmailCleanerView.swift */; };
+		B1565BDA3D150FD1252636EE /* SmartCleanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396C525238F1FBBB7227EB5F /* SmartCleanView.swift */; };
+		C036BA3D03E54E9EE5BAD7B5 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = B82CA454EC7FE274121FB2AA /* PrivacyInfo.xcprivacy */; };
+		C0D9DC9CAB099ADEC60458CC /* MorePlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F4CDA22467C94D2544F618 /* MorePlaceholderView.swift */; };
+		C376F03DE0A13550DA144C34 /* EmailCheckerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2EA232E44615BE41171471 /* EmailCheckerService.swift */; };
+		CFA085C02DC4DC4C2308DCFF /* OptimizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A65E7716173C6F7665CF64F /* OptimizerView.swift */; };
+		D3096B9781320B507C50D955 /* ScanResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A25FBB0DF52E779CDFF4ACF /* ScanResultsView.swift */; };
+		D322DDB9150BE6E87B8D766B /* ICloudService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4246A2CA08A7219D13DC69 /* ICloudService.swift */; };
+		E01BD0C2904D9C6684179047 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CDFEC4E3BA699E1320F643 /* MainTabView.swift */; };
+		E8F42092A5B264A9293FA15C /* PhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC24DE9DB65A9218DF781B4 /* PhotosView.swift */; };
+		E9280942D96F7B1310713E99 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A62B6E49C8C2B8CB21995181 /* Localizable.strings */; };
+		ECDE4372907ABC5E45BD682F /* VaultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226E1315243A9B1E4A7133F2 /* VaultService.swift */; };
+		F54ECB16EDEE77BE527A1D91 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBB4740F92F50FDC752C3B2 /* AppSettings.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		090CE3719F90379EA3233AA9 /* DuplicatePhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuplicatePhotoService.swift; sourceTree = "<group>"; };
+		0BBB4740F92F50FDC752C3B2 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		0D2C9BE8F0840FED0DCFDDF6 /* CompressionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompressionService.swift; sourceTree = "<group>"; };
+		0E7E4A04DEEBCF8A6FAE563D /* OptimizerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptimizerService.swift; sourceTree = "<group>"; };
+		15069557394CEC5D4C59D2B6 /* PermissionViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionViews.swift; sourceTree = "<group>"; };
+		16B1DEFB99CCE3FF1F359163 /* ProBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProBadge.swift; sourceTree = "<group>"; };
+		16FE466CC02EB6AC73FE654C /* StorageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageModel.swift; sourceTree = "<group>"; };
+		19C851D4B615EB9E008EF631 /* ClaroTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaroTheme.swift; sourceTree = "<group>"; };
+		1B22C28A4E0A97E51DA52584 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21F4CDA22467C94D2544F618 /* MorePlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorePlaceholderView.swift; sourceTree = "<group>"; };
+		226E1315243A9B1E4A7133F2 /* VaultService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultService.swift; sourceTree = "<group>"; };
+		235E650869E8E371BC270097 /* ClaroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaroApp.swift; sourceTree = "<group>"; };
+		262A93944079ACD0517EA1F8 /* LegalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalView.swift; sourceTree = "<group>"; };
+		26D9052988088E4EE75A2FC5 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		2A65E7716173C6F7665CF64F /* OptimizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptimizerView.swift; sourceTree = "<group>"; };
+		2CC2FC1126A86B723A00B5B0 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		396C525238F1FBBB7227EB5F /* SmartCleanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartCleanView.swift; sourceTree = "<group>"; };
+		48CDFEC4E3BA699E1320F643 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		4AA09DFA0AFBC886D098D281 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5420F2E166C357056F72A43F /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		5687B0F116D2C79F9C7F682D /* CompressionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompressionView.swift; sourceTree = "<group>"; };
+		5A25FBB0DF52E779CDFF4ACF /* ScanResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanResultsView.swift; sourceTree = "<group>"; };
+		5B0E7E01A976DFDC5934D555 /* PermissionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsService.swift; sourceTree = "<group>"; };
+		6E3A79E0F0F976CC360217DF /* AppearancePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearancePickerView.swift; sourceTree = "<group>"; };
+		7387178B491E2B2FE1637CBD /* ScanService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanService.swift; sourceTree = "<group>"; };
+		7507187F71B03A502D6F698A /* ContactService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactService.swift; sourceTree = "<group>"; };
+		7806CE157B92DB246196BE0D /* LanguagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePickerView.swift; sourceTree = "<group>"; };
+		7853AF75504F678D7F7BD384 /* ClaroCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaroCard.swift; sourceTree = "<group>"; };
+		7EB047BBAB380A27C0941D84 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		806F52FC4789C7EC8E5B6CB1 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		8796B8C72F320F67DE6A2DDE /* StoreKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitService.swift; sourceTree = "<group>"; };
+		9AD521C17BB89CFE2AFFB4B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9F4817044B2CAD480F4FEF44 /* EmailCleanerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailCleanerService.swift; sourceTree = "<group>"; };
+		A60037E8A769EBF72C92C045 /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
+		B0201C816B2AE0B17B50C40D /* LargeMediaReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeMediaReviewView.swift; sourceTree = "<group>"; };
+		B12830749B841F59176DD890 /* ICloudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICloudView.swift; sourceTree = "<group>"; };
+		B82CA454EC7FE274121FB2AA /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		BAAA995C15D9FB12127EA3B1 /* Claro.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Claro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD4246A2CA08A7219D13DC69 /* ICloudService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICloudService.swift; sourceTree = "<group>"; };
+		C26DE1551C8D9066FD3B46E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C57D43D22AE02D68F633BE95 /* EmailCleanerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailCleanerView.swift; sourceTree = "<group>"; };
+		C784F9807F75D400C709BE4D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D7AAF333B089E68820CBFCA6 /* VaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultView.swift; sourceTree = "<group>"; };
+		D8F9E6FEA2AFCABC5EA7D3A2 /* ContactReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactReviewView.swift; sourceTree = "<group>"; };
+		DCC24DE9DB65A9218DF781B4 /* PhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosView.swift; sourceTree = "<group>"; };
+		E492EAAE7A63985C0A417EE3 /* DuplicateReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuplicateReviewView.swift; sourceTree = "<group>"; };
+		E7ACA71337656784080F43D3 /* EmailCheckerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailCheckerView.swift; sourceTree = "<group>"; };
+		FD2EA232E44615BE41171471 /* EmailCheckerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailCheckerService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0D22AD429DB74F8F8BBCFDBF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				16FE466CC02EB6AC73FE654C /* StorageModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2632673D82A78C6CE93B386D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAAA995C15D9FB12127EA3B1 /* Claro.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29E880A9001281BA399BCA7B /* EmailCleaner */ = {
+			isa = PBXGroup;
+			children = (
+				9F4817044B2CAD480F4FEF44 /* EmailCleanerService.swift */,
+				C57D43D22AE02D68F633BE95 /* EmailCleanerView.swift */,
+			);
+			path = EmailCleaner;
+			sourceTree = "<group>";
+		};
+		2AF7FC39464E44BE209D8CA7 = {
+			isa = PBXGroup;
+			children = (
+				E3FD4808F99F74433A3994D8 /* Claro */,
+				2632673D82A78C6CE93B386D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2EB135D3814CF2FBFC2BDA76 /* Vault */ = {
+			isa = PBXGroup;
+			children = (
+				226E1315243A9B1E4A7133F2 /* VaultService.swift */,
+				D7AAF333B089E68820CBFCA6 /* VaultView.swift */,
+			);
+			path = Vault;
+			sourceTree = "<group>";
+		};
+		2F5FBBD3DB7EC9E05632D2A3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7853AF75504F678D7F7BD384 /* ClaroCard.swift */,
+				15069557394CEC5D4C59D2B6 /* PermissionViews.swift */,
+				16B1DEFB99CCE3FF1F359163 /* ProBadge.swift */,
+				26D9052988088E4EE75A2FC5 /* SafariView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		33405611C5EB8BA2D690CC97 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				21F4CDA22467C94D2544F618 /* MorePlaceholderView.swift */,
+				A60037E8A769EBF72C92C045 /* MoreView.swift */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		41C625AF79F8D05080DE74C6 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				6E3A79E0F0F976CC360217DF /* AppearancePickerView.swift */,
+				7806CE157B92DB246196BE0D /* LanguagePickerView.swift */,
+				C784F9807F75D400C709BE4D /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		4220699C71075501F190FB34 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0BBB4740F92F50FDC752C3B2 /* AppSettings.swift */,
+				2CC2FC1126A86B723A00B5B0 /* NotificationService.swift */,
+				5B0E7E01A976DFDC5934D555 /* PermissionsService.swift */,
+				7387178B491E2B2FE1637CBD /* ScanService.swift */,
+				8796B8C72F320F67DE6A2DDE /* StoreKitService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		58C1D58587900EC81A2613A1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				235E650869E8E371BC270097 /* ClaroApp.swift */,
+				48CDFEC4E3BA699E1320F643 /* MainTabView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		623171303506BB08A229621F /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				19C851D4B615EB9E008EF631 /* ClaroTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		66CEF72E6B4808FBF375BAF1 /* Compression */ = {
+			isa = PBXGroup;
+			children = (
+				0D2C9BE8F0840FED0DCFDDF6 /* CompressionService.swift */,
+				5687B0F116D2C79F9C7F682D /* CompressionView.swift */,
+			);
+			path = Compression;
+			sourceTree = "<group>";
+		};
+		6EB4F34CC7B3430BAD76830B /* EmailChecker */ = {
+			isa = PBXGroup;
+			children = (
+				FD2EA232E44615BE41171471 /* EmailCheckerService.swift */,
+				E7ACA71337656784080F43D3 /* EmailCheckerView.swift */,
+			);
+			path = EmailChecker;
+			sourceTree = "<group>";
+		};
+		6FA4CEBC5A8A9E6B5C662214 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7EB047BBAB380A27C0941D84 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		99CD75698286DF543DBBC69E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1B22C28A4E0A97E51DA52584 /* Assets.xcassets */,
+				9AD521C17BB89CFE2AFFB4B4 /* Info.plist */,
+				A62B6E49C8C2B8CB21995181 /* Localizable.strings */,
+				B82CA454EC7FE274121FB2AA /* PrivacyInfo.xcprivacy */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A30DE2768482A42E2364FD90 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				D8F9E6FEA2AFCABC5EA7D3A2 /* ContactReviewView.swift */,
+				7507187F71B03A502D6F698A /* ContactService.swift */,
+				5420F2E166C357056F72A43F /* ContactsView.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		A887E1F754D6149CBED3340C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2F5FBBD3DB7EC9E05632D2A3 /* Components */,
+				0D22AD429DB74F8F8BBCFDBF /* Models */,
+				4220699C71075501F190FB34 /* Services */,
+				623171303506BB08A229621F /* Theme */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B14E6FDE1DCC02402265F73D /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				66CEF72E6B4808FBF375BAF1 /* Compression */,
+				A30DE2768482A42E2364FD90 /* Contacts */,
+				6EB4F34CC7B3430BAD76830B /* EmailChecker */,
+				29E880A9001281BA399BCA7B /* EmailCleaner */,
+				6FA4CEBC5A8A9E6B5C662214 /* Home */,
+				C14A94A6508C1D34C4F00E26 /* iCloud */,
+				F538293A8B10A9C5B9C94A69 /* Legal */,
+				33405611C5EB8BA2D690CC97 /* More */,
+				EF34FFA5A0A3B5EADA67FBCE /* Optimizer */,
+				F97FC9BE87099B72AF9A92D4 /* Paywall */,
+				E86D915F25F0F0E86DD368CA /* Photos */,
+				41C625AF79F8D05080DE74C6 /* Settings */,
+				F83934EAEEA02573F6361D64 /* SmartClean */,
+				2EB135D3814CF2FBFC2BDA76 /* Vault */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		C14A94A6508C1D34C4F00E26 /* iCloud */ = {
+			isa = PBXGroup;
+			children = (
+				BD4246A2CA08A7219D13DC69 /* ICloudService.swift */,
+				B12830749B841F59176DD890 /* ICloudView.swift */,
+				B0201C816B2AE0B17B50C40D /* LargeMediaReviewView.swift */,
+			);
+			path = iCloud;
+			sourceTree = "<group>";
+		};
+		E3FD4808F99F74433A3994D8 /* Claro */ = {
+			isa = PBXGroup;
+			children = (
+				58C1D58587900EC81A2613A1 /* App */,
+				A887E1F754D6149CBED3340C /* Core */,
+				B14E6FDE1DCC02402265F73D /* Features */,
+				99CD75698286DF543DBBC69E /* Resources */,
+			);
+			path = Claro;
+			sourceTree = "<group>";
+		};
+		E86D915F25F0F0E86DD368CA /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				090CE3719F90379EA3233AA9 /* DuplicatePhotoService.swift */,
+				E492EAAE7A63985C0A417EE3 /* DuplicateReviewView.swift */,
+				DCC24DE9DB65A9218DF781B4 /* PhotosView.swift */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		EF34FFA5A0A3B5EADA67FBCE /* Optimizer */ = {
+			isa = PBXGroup;
+			children = (
+				0E7E4A04DEEBCF8A6FAE563D /* OptimizerService.swift */,
+				2A65E7716173C6F7665CF64F /* OptimizerView.swift */,
+			);
+			path = Optimizer;
+			sourceTree = "<group>";
+		};
+		F538293A8B10A9C5B9C94A69 /* Legal */ = {
+			isa = PBXGroup;
+			children = (
+				262A93944079ACD0517EA1F8 /* LegalView.swift */,
+			);
+			path = Legal;
+			sourceTree = "<group>";
+		};
+		F83934EAEEA02573F6361D64 /* SmartClean */ = {
+			isa = PBXGroup;
+			children = (
+				5A25FBB0DF52E779CDFF4ACF /* ScanResultsView.swift */,
+				396C525238F1FBBB7227EB5F /* SmartCleanView.swift */,
+			);
+			path = SmartClean;
+			sourceTree = "<group>";
+		};
+		F97FC9BE87099B72AF9A92D4 /* Paywall */ = {
+			isa = PBXGroup;
+			children = (
+				806F52FC4789C7EC8E5B6CB1 /* PaywallView.swift */,
+			);
+			path = Paywall;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		441250D8FEFF1B4542E2A489 /* Claro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD1A40D06FDBF37DD5E0600B /* Build configuration list for PBXNativeTarget "Claro" */;
+			buildPhases = (
+				C84031CBBD47DCB95B96F497 /* Sources */,
+				A128698D077338F0D34B84C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Claro;
+			packageProductDependencies = (
+			);
+			productName = Claro;
+			productReference = BAAA995C15D9FB12127EA3B1 /* Claro.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEEC1C26ED508662C74C3296 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					441250D8FEFF1B4542E2A489 = {
+						DevelopmentTeam = 2X955T7VJ9;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B49C8A050B26198B02E284F7 /* Build configuration list for PBXProject "Claro" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				he,
+			);
+			mainGroup = 2AF7FC39464E44BE209D8CA7;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				441250D8FEFF1B4542E2A489 /* Claro */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A128698D077338F0D34B84C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4785C00DEF718CBBFB681B62 /* Assets.xcassets in Resources */,
+				E9280942D96F7B1310713E99 /* Localizable.strings in Resources */,
+				C036BA3D03E54E9EE5BAD7B5 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C84031CBBD47DCB95B96F497 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F54ECB16EDEE77BE527A1D91 /* AppSettings.swift in Sources */,
+				48C30D873A2CC5BD505E7DD3 /* AppearancePickerView.swift in Sources */,
+				7830F1CE80EB30142D2B0568 /* ClaroApp.swift in Sources */,
+				4FC592BE989F96F2DB7DFDAA /* ClaroCard.swift in Sources */,
+				31CEF1C5047C6D75BDB846D0 /* ClaroTheme.swift in Sources */,
+				683CFE1F2F5B1C4A5BA581DE /* CompressionService.swift in Sources */,
+				52E538B29ED43BBC973BBA5B /* CompressionView.swift in Sources */,
+				7174A950240DB36D0C8FA953 /* ContactReviewView.swift in Sources */,
+				0405BBFE4193FA8257BC180C /* ContactService.swift in Sources */,
+				3B62B3B9DA4AE2BDA3DF478E /* ContactsView.swift in Sources */,
+				8C23AF6AC15B292EFB8C0EA2 /* DuplicatePhotoService.swift in Sources */,
+				55EB15F73AE1ACF9E5AFDE96 /* DuplicateReviewView.swift in Sources */,
+				C376F03DE0A13550DA144C34 /* EmailCheckerService.swift in Sources */,
+				367205D55117CC734B246FEB /* EmailCheckerView.swift in Sources */,
+				95369A52E8203E0690620A96 /* EmailCleanerService.swift in Sources */,
+				9D6A772D5EEEAC65D0892F0A /* EmailCleanerView.swift in Sources */,
+				4DCFD0714458E3611275E4FB /* HomeView.swift in Sources */,
+				D322DDB9150BE6E87B8D766B /* ICloudService.swift in Sources */,
+				5F289B35CC0BC0F695C8064E /* ICloudView.swift in Sources */,
+				79EB1C07C8DA37399699B63F /* LanguagePickerView.swift in Sources */,
+				81F0BD5C75B84E9BB36417C6 /* LargeMediaReviewView.swift in Sources */,
+				5CE4A7860E841F92E34FF2B3 /* LegalView.swift in Sources */,
+				E01BD0C2904D9C6684179047 /* MainTabView.swift in Sources */,
+				C0D9DC9CAB099ADEC60458CC /* MorePlaceholderView.swift in Sources */,
+				8599A351DED346DFDAE5B8EA /* MoreView.swift in Sources */,
+				5A09E9FC73A9D939E86E8E90 /* NotificationService.swift in Sources */,
+				1BC5697CD97F4FD7EC1CAB40 /* OptimizerService.swift in Sources */,
+				CFA085C02DC4DC4C2308DCFF /* OptimizerView.swift in Sources */,
+				289FB45A0C70119F40704DAB /* PaywallView.swift in Sources */,
+				9AA0C7B113AC681A9E0C2EBA /* PermissionViews.swift in Sources */,
+				3A9AE0CC62B76B6A60B5BEE5 /* PermissionsService.swift in Sources */,
+				E8F42092A5B264A9293FA15C /* PhotosView.swift in Sources */,
+				578E1B86C4EAA3A5995C65AD /* ProBadge.swift in Sources */,
+				6E1C3372CFD607DEBD81D818 /* SafariView.swift in Sources */,
+				D3096B9781320B507C50D955 /* ScanResultsView.swift in Sources */,
+				713466BCA5168ABF483ADA83 /* ScanService.swift in Sources */,
+				1068239CBF0A377A82C97C87 /* SettingsView.swift in Sources */,
+				B1565BDA3D150FD1252636EE /* SmartCleanView.swift in Sources */,
+				4A30B711FC9B42C29337D419 /* StorageModel.swift in Sources */,
+				6BA829AC5C670BB9C75156E0 /* StoreKitService.swift in Sources */,
+				ECDE4372907ABC5E45BD682F /* VaultService.swift in Sources */,
+				78AC1BD08B65BB12212DB650 /* VaultView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A62B6E49C8C2B8CB21995181 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C26DE1551C8D9066FD3B46E1 /* en */,
+				4AA09DFA0AFBC886D098D281 /* he */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0D3896DFF98CDC1922D7B5ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Claro/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		56FA1E0349A613B0338823C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 2X955T7VJ9;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.samueleskenasy.claro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		5F4A62A87A1059AF2AA74073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 2X955T7VJ9;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.samueleskenasy.claro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B70FB797F1FFE27D658C536D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Claro/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B49C8A050B26198B02E284F7 /* Build configuration list for PBXProject "Claro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F4A62A87A1059AF2AA74073 /* Debug */,
+				56FA1E0349A613B0338823C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CD1A40D06FDBF37DD5E0600B /* Build configuration list for PBXNativeTarget "Claro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D3896DFF98CDC1922D7B5ED /* Debug */,
+				B70FB797F1FFE27D658C536D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEEC1C26ED508662C74C3296 /* Project object */;
+}
