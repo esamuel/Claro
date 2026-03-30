@@ -53,21 +53,49 @@ final class EmailCheckerService {
         case checking
         case result(EmailReputation)
         case error(String)
+        case cooldown(until: Date)
     }
 
     private(set) var state: CheckState = .idle
     var email = ""
+
+    /// Cache: email → result, avoids hitting the API for the same address twice
+    private var cache: [String: EmailReputation] = [:]
+    /// Rate-limit cooldown end time
+    private var cooldownUntil: Date? = nil
 
     var isValidEmail: Bool {
         let pattern = #"^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"#
         return email.range(of: pattern, options: .regularExpression) != nil
     }
 
+    var isOnCooldown: Bool {
+        guard let until = cooldownUntil else { return false }
+        return Date() < until
+    }
+
     // MARK: - Check
 
     @MainActor
     func check() async {
-        guard isValidEmail else { state = .error("Please enter a valid email address."); return }
+        guard isValidEmail else {
+            state = .error("Please enter a valid email address.")
+            return
+        }
+
+        // If on cooldown, show remaining time
+        if let until = cooldownUntil, Date() < until {
+            state = .cooldown(until: until)
+            return
+        }
+
+        // Return cached result instantly
+        let key = email.lowercased()
+        if let cached = cache[key] {
+            state = .result(cached)
+            return
+        }
+
         state = .checking
 
         let encoded = email.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? email
@@ -76,7 +104,7 @@ final class EmailCheckerService {
             return
         }
 
-        var request        = URLRequest(url: url)
+        var request = URLRequest(url: url)
         request.setValue("Claro-iOS", forHTTPHeaderField: "User-Agent")
         request.timeoutInterval = 15
 
@@ -86,12 +114,16 @@ final class EmailCheckerService {
 
             switch http?.statusCode {
             case 200:
-                let rep = try JSONDecoder().decode(EmailReputation.self, from: data)
-                state   = .result(rep)
+                let rep   = try JSONDecoder().decode(EmailReputation.self, from: data)
+                cache[key] = rep
+                state      = .result(rep)
             case 400:
                 state = .error("Invalid email address.")
             case 429:
-                state = .error("Too many requests. Please wait a moment and try again.")
+                // Back off for 60 seconds
+                let retryDate = Date().addingTimeInterval(60)
+                cooldownUntil = retryDate
+                state = .cooldown(until: retryDate)
             default:
                 state = .error("Could not reach the server. Check your connection.")
             }

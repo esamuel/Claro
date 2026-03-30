@@ -20,17 +20,21 @@ final class ContactService {
 
     // MARK: - State
 
-    private(set) var groups:       [ContactDuplicateGroup] = []
-    private(set) var isScanning    = false
-    private(set) var scanComplete  = false
+    private(set) var groups:              [ContactDuplicateGroup] = []
+    private(set) var incompleteContacts:  [CNContact]             = []
+    private(set) var noNameContacts:      [CNContact]             = []
+    private(set) var isScanning           = false
+    private(set) var scanComplete         = false
 
     /// Set to true by Smart Clean to trigger the review sheet when Contacts tab appears.
     var pendingReview = false
 
     // MARK: - Computed
 
-    var totalDuplicates: Int { groups.flatMap { $0.contacts.dropFirst() }.count }
-    var groupCount:      Int { groups.count }
+    var totalDuplicates:  Int { groups.flatMap { $0.contacts.dropFirst() }.count }
+    var groupCount:       Int { groups.count }
+    var incompleteCount:  Int { incompleteContacts.count }
+    var noNameCount:      Int { noNameContacts.count }
 
     // MARK: - Scan
 
@@ -40,13 +44,15 @@ final class ContactService {
         isScanning   = true
         scanComplete = false
 
-        let found = await Task.detached(priority: .userInitiated) {
-            Self.findDuplicateGroups()
+        let (found, incomplete, noName) = await Task.detached(priority: .userInitiated) {
+            Self.findAllIssues()
         }.value
 
-        groups       = found
-        isScanning   = false
-        scanComplete = true
+        groups             = found
+        incompleteContacts = incomplete
+        noNameContacts     = noName
+        isScanning         = false
+        scanComplete       = true
     }
 
     // MARK: - Delete
@@ -103,21 +109,36 @@ final class ContactService {
         await scan()
     }
 
+    // MARK: - Delete (incomplete / no-name contacts)
+
+    @MainActor
+    func deleteContacts(_ contacts: [CNContact]) async throws {
+        let store = CNContactStore()
+        let save  = CNSaveRequest()
+        for c in contacts {
+            save.delete(c.mutableCopy() as! CNMutableContact)
+        }
+        try store.execute(save)
+        await scan()
+    }
+
     // MARK: - Detection (off main thread)
 
-    private static func findDuplicateGroups() -> [ContactDuplicateGroup] {
+    private static func findAllIssues() -> ([ContactDuplicateGroup], [CNContact], [CNContact]) {
         let store = CNContactStore()
         let keys: [CNKeyDescriptor] = [
-            CNContactGivenNameKey    as CNKeyDescriptor,
-            CNContactFamilyNameKey   as CNKeyDescriptor,
-            CNContactPhoneNumbersKey as CNKeyDescriptor,
-            CNContactEmailAddressesKey as CNKeyDescriptor,
+            CNContactGivenNameKey        as CNKeyDescriptor,
+            CNContactFamilyNameKey       as CNKeyDescriptor,
+            CNContactOrganizationNameKey as CNKeyDescriptor,
+            CNContactPhoneNumbersKey     as CNKeyDescriptor,
+            CNContactEmailAddressesKey   as CNKeyDescriptor,
         ]
 
         var all: [CNContact] = []
         let req = CNContactFetchRequest(keysToFetch: keys)
         try? store.enumerateContacts(with: req) { c, _ in all.append(c) }
 
+        // ── Duplicates ──────────────────────────────────────────────────────
         var byPhone: [String: [CNContact]] = [:]
         var byName:  [String: [CNContact]] = [:]
 
@@ -127,8 +148,7 @@ final class ContactService {
                 if n.count >= 7 { byPhone[n, default: []].append(c) }
             }
             let name = "\(c.givenName) \(c.familyName)"
-                .lowercased()
-                .trimmingCharacters(in: .whitespaces)
+                .lowercased().trimmingCharacters(in: .whitespaces)
             if name.count > 2 { byName[name, default: []].append(c) }
         }
 
@@ -138,8 +158,7 @@ final class ContactService {
         func addGroup(_ contacts: [CNContact], reason: ContactDuplicateGroup.Reason) {
             let ids = contacts.map(\.identifier)
             guard !ids.contains(where: { processedIDs.contains($0) }) else { return }
-            // Deduplicate within group
-            var seen  = Set<String>()
+            var seen   = Set<String>()
             let unique = contacts.filter { seen.insert($0.identifier).inserted }
             guard unique.count > 1 else { return }
             ids.forEach { processedIDs.insert($0) }
@@ -149,6 +168,19 @@ final class ContactService {
         byPhone.values.filter { $0.count > 1 }.forEach { addGroup($0, reason: .duplicatePhone) }
         byName.values.filter  { $0.count > 1 }.forEach { addGroup($0, reason: .duplicateName)  }
 
-        return groups
+        // ── Incomplete: has a name but no phone AND no email ─────────────────
+        let incomplete = all.filter { c in
+            let hasName  = !c.givenName.isEmpty || !c.familyName.isEmpty
+            let hasPhone = !c.phoneNumbers.isEmpty
+            let hasEmail = !c.emailAddresses.isEmpty
+            return hasName && !hasPhone && !hasEmail
+        }
+
+        // ── No Name: missing given, family AND organisation name ─────────────
+        let noName = all.filter { c in
+            c.givenName.isEmpty && c.familyName.isEmpty && c.organizationName.isEmpty
+        }
+
+        return (groups, incomplete, noName)
     }
 }

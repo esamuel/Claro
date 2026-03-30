@@ -55,7 +55,9 @@ struct ContactsView: View {
 
 struct ContactsContentView: View {
     @Environment(ContactService.self) private var service
-    @State private var showReview = false
+    @State private var showReview       = false
+    @State private var showIncomplete   = false
+    @State private var showNoName       = false
 
     var body: some View {
         ScrollView(showsIndicators: false) {
@@ -81,16 +83,20 @@ struct ContactsContentView: View {
                             icon: "person.crop.circle.badge.exclamationmark",
                             iconColor: .claroWarning,
                             title: "Incomplete Contacts",
-                            subtitle: "Coming soon"
-                        )
+                            subtitle: service.incompleteCount > 0
+                                ? "\(service.incompleteCount) contacts missing phone & email"
+                                : "All contacts look complete"
+                        ) { if service.incompleteCount > 0 { showIncomplete = true } }
                         .padding(.horizontal)
 
                         ClaroToolRow(
                             icon: "person.crop.circle.badge.xmark",
                             iconColor: .claroTextMuted,
                             title: "No Name Contacts",
-                            subtitle: "Coming soon"
-                        )
+                            subtitle: service.noNameCount > 0
+                                ? "\(service.noNameCount) contacts with no name"
+                                : "All contacts have names"
+                        ) { if service.noNameCount > 0 { showNoName = true } }
                         .padding(.horizontal)
                     }
                 }
@@ -101,6 +107,22 @@ struct ContactsContentView: View {
         }
         .sheet(isPresented: $showReview) {
             ContactReviewView(service: service)
+        }
+        .sheet(isPresented: $showIncomplete) {
+            SimpleContactListView(
+                title: "Incomplete Contacts",
+                subtitle: "These contacts have a name but no phone number or email.",
+                contacts: service.incompleteContacts,
+                service: service
+            )
+        }
+        .sheet(isPresented: $showNoName) {
+            SimpleContactListView(
+                title: "No Name Contacts",
+                subtitle: "These contacts have no name, phone, or email assigned.",
+                contacts: service.noNameContacts,
+                service: service
+            )
         }
         .task { await service.scan() }
         .onAppear {
@@ -200,6 +222,159 @@ struct ContactsContentView: View {
         )
         .frame(minHeight: 180)
         .claroCardShadow()
+    }
+}
+
+// MARK: - Simple Contact List (Incomplete / No Name)
+
+struct SimpleContactListView: View {
+    let title:    String
+    let subtitle: String
+    let contacts: [CNContact]
+    let service:  ContactService
+
+    @Environment(\.dismiss) private var dismiss
+    @State private var selected: Set<String> = []
+    @State private var isDeleting = false
+    @State private var errorMessage: String?
+
+    var body: some View {
+        NavigationStack {
+            ZStack {
+                Color.claroBg.ignoresSafeArea()
+
+                if contacts.isEmpty {
+                    VStack(spacing: 12) {
+                        Image(systemName: "checkmark.seal.fill")
+                            .font(.system(size: 44))
+                            .foregroundStyle(Color.claroSuccess)
+                        Text("All Clean!")
+                            .font(.claroTitle2())
+                            .foregroundStyle(Color.claroTextPrimary)
+                    }
+                } else {
+                    VStack(spacing: 0) {
+                        Text(subtitle)
+                            .font(.claroCaption())
+                            .foregroundStyle(Color.claroTextSecondary)
+                            .multilineTextAlignment(.center)
+                            .padding(.horizontal, 20)
+                            .padding(.vertical, 12)
+
+                        List {
+                            ForEach(contacts, id: \.identifier) { contact in
+                                let name = fullName(contact)
+                                HStack(spacing: 14) {
+                                    // Selection circle
+                                    Image(systemName: selected.contains(contact.identifier)
+                                          ? "checkmark.circle.fill" : "circle")
+                                        .font(.system(size: 22))
+                                        .foregroundStyle(selected.contains(contact.identifier)
+                                                         ? Color.claroDanger : Color.claroTextMuted)
+
+                                    VStack(alignment: .leading, spacing: 3) {
+                                        Text(name.isEmpty ? "Unknown" : name)
+                                            .font(.claroHeadline())
+                                            .foregroundStyle(Color.claroTextPrimary)
+                                        if !contact.phoneNumbers.isEmpty {
+                                            Text(contact.phoneNumbers.first?.value.stringValue ?? "")
+                                                .font(.claroCaption())
+                                                .foregroundStyle(Color.claroTextSecondary)
+                                        } else if !contact.emailAddresses.isEmpty {
+                                            Text(contact.emailAddresses.first?.value as? String ?? "")
+                                                .font(.claroCaption())
+                                                .foregroundStyle(Color.claroTextSecondary)
+                                        } else {
+                                            Text("No phone or email")
+                                                .font(.claroCaption())
+                                                .foregroundStyle(Color.claroTextMuted)
+                                        }
+                                    }
+                                    Spacer()
+                                }
+                                .contentShape(Rectangle())
+                                .onTapGesture {
+                                    if selected.contains(contact.identifier) {
+                                        selected.remove(contact.identifier)
+                                    } else {
+                                        selected.insert(contact.identifier)
+                                    }
+                                }
+                                .listRowBackground(Color.claroCard)
+                            }
+                        }
+                        .listStyle(.plain)
+                        .scrollContentBackground(.hidden)
+
+                        if !selected.isEmpty {
+                            Button {
+                                Task { await deleteSelected() }
+                            } label: {
+                                HStack(spacing: 8) {
+                                    if isDeleting {
+                                        ProgressView().tint(.white)
+                                    } else {
+                                        Image(systemName: "trash.fill")
+                                        Text("Delete \(selected.count) Contacts")
+                                            .font(.system(size: 15, weight: .bold))
+                                    }
+                                }
+                                .foregroundStyle(.white)
+                                .frame(maxWidth: .infinity)
+                                .frame(height: 50)
+                                .background(Color.claroDanger)
+                                .clipShape(RoundedRectangle(cornerRadius: ClaroRadius.md))
+                                .padding(.horizontal, 20)
+                                .padding(.bottom, 12)
+                            }
+                            .buttonStyle(.plain)
+                            .disabled(isDeleting)
+                        }
+                    }
+                }
+            }
+            .navigationTitle(title)
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button("Done") { dismiss() }
+                        .foregroundStyle(Color.claroViolet)
+                }
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button(selected.count == contacts.count ? "Deselect All" : "Select All") {
+                        if selected.count == contacts.count {
+                            selected.removeAll()
+                        } else {
+                            selected = Set(contacts.map(\.identifier))
+                        }
+                    }
+                    .foregroundStyle(Color.claroViolet)
+                }
+            }
+            .alert("Error", isPresented: .constant(errorMessage != nil)) {
+                Button("OK") { errorMessage = nil }
+            } message: {
+                Text(errorMessage ?? "")
+            }
+        }
+    }
+
+    private func fullName(_ c: CNContact) -> String {
+        [c.givenName, c.familyName]
+            .filter { !$0.isEmpty }
+            .joined(separator: " ")
+    }
+
+    private func deleteSelected() async {
+        isDeleting = true
+        let toDelete = contacts.filter { selected.contains($0.identifier) }
+        do {
+            try await service.deleteContacts(toDelete)
+            dismiss()
+        } catch {
+            errorMessage = error.localizedDescription
+        }
+        isDeleting = false
     }
 }
 

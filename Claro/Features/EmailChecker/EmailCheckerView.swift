@@ -176,6 +176,10 @@ struct EmailCheckerView: View {
                     .strokeBorder(Color.claroWarning.opacity(0.3), lineWidth: 1)
             )
             .padding(.horizontal)
+
+        case .cooldown(let until):
+            CooldownCard(until: until)
+                .padding(.horizontal)
         }
     }
 }
@@ -333,6 +337,44 @@ private struct DetailRow: View {
         }
         .padding(.horizontal, 16)
         .padding(.vertical, 10)
+    }
+}
+
+// MARK: - Cooldown Card
+
+private struct CooldownCard: View {
+    let until: Date
+    @State private var remaining: Int = 0
+    private let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+
+    var body: some View {
+        HStack(spacing: 14) {
+            Image(systemName: "clock.badge.exclamationmark")
+                .font(.system(size: 20))
+                .foregroundStyle(Color.claroWarning)
+            VStack(alignment: .leading, spacing: 3) {
+                Text("Too many requests")
+                    .font(.claroHeadline())
+                    .foregroundStyle(Color.claroTextPrimary)
+                Text(remaining > 0
+                     ? "Please wait \(remaining)s before trying again."
+                     : "You can try again now.")
+                    .font(.claroCaption())
+                    .foregroundStyle(Color.claroTextSecondary)
+            }
+            Spacer()
+        }
+        .padding(16)
+        .background(Color.claroWarning.opacity(0.07))
+        .clipShape(RoundedRectangle(cornerRadius: ClaroRadius.md))
+        .overlay(
+            RoundedRectangle(cornerRadius: ClaroRadius.md)
+                .strokeBorder(Color.claroWarning.opacity(0.3), lineWidth: 1)
+        )
+        .onAppear { remaining = max(0, Int(until.timeIntervalSinceNow)) }
+        .onReceive(timer) { _ in
+            remaining = max(0, Int(until.timeIntervalSinceNow))
+        }
     }
 }
 
